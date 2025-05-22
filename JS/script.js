@@ -1,0 +1,1 @@
+console.log("White Angel weboldal betöltve.");
