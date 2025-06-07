@@ -6,53 +6,82 @@
   <title>White Angel RP - FiveM</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
   <div class="wrapper">
     <nav>
       <a href="szabaly.html">Szabályzat</a>
-      <a href="#kapcsolat"></a>
+      <a href="#kapcsolat">Kapcsolat</a>
       <a href="premium-bolt.html">Prémium bolt</a>
     </nav>
 
     <div class="content">
       <header>
+        <img src="../img/logo.png" alt="White Angel RP Logo" style="max-width:120px;margin-bottom:16px;">
         <h1>White Angel RP</h1>
         <p>Magyar FiveM RolePlay közösség</p>
+        <div class="server-status">
+          <span class="status-dot online"></span> Szerver állapot: <strong>Online</strong> | <span id="playerCount">32/128</span>
+        </div>
+        <a href="fivem://connect/your.server.ip:30120" class="btn" style="margin-top:24px;display:inline-block;">Csatlakozás a szerverhez</a>
+        <div class="scroll-down-arrow" onclick="document.getElementById('rolunk').scrollIntoView({behavior:'smooth'})">
+          <span>&#8595;</span>
+        </div>
       </header>
 
       <section id="rolunk">
         <h2>Rólunk</h2>
-        <p>A White Angel RP egy barátságos és aktív magyar FiveM RolePlay szerver, ahol a játékosok izgalmas történeteket élhetnek át, közösséget építhetnek és egyedi élményeket szerezhetnek. Célunk, hogy mindenki számára élvezetes és biztonságos játékélményt nyújtsunk.</p>
+        <p>
+          A White Angel RP egy összetartó, aktív magyar FiveM RolePlay közösség, ahol minden játékosnak lehetősége van izgalmas történeteket átélni, új barátokat szerezni és egyedi élményekkel gazdagodni.<br>
+          <strong>Küldetésünk</strong>, hogy mindenki számára biztonságos, élvezetes és kreatív játékteret biztosítsunk, ahol a közösség és a jó hangulat az első!
+        </p>
       </section>
 
       <section id="kapcsolat">
-        <h2></h2>
-        <p><a href=""></a></p>
-        <p></p>
+        <h2>Kapcsolat</h2>
+        <p>
+          <strong>Discord:</strong>
+          <a href="https://discord.gg/whiteangelrp" target="_blank" rel="noopener">discord.gg/whiteangelrp</a>
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:info@whiteangelrp.hu">info@whiteangelrp.hu</a>
+        </p>
+        <div class="btn-group" style="justify-content:center;">
+          <a href="mailto:info@whiteangelrp.hu" class="btn btn-icon" title="Írj emailt">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#181824" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/>
+            </svg>
+          </a>
+          <a href="https://discord.gg/whiteangelrp" target="_blank" class="btn btn-icon" title="Csatlakozz Discordon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#181824" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.5 17.5L16.5 16.5M6.5 16.5L5.5 17.5M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section id="frakciok">
         <h2>Frakciók</h2>
         <ul>
-          <li>
-            <strong>Rendőrség (LSPD)</strong> – A város rendjének fenntartásáért felelős hivatalos szervezet, akik a bűnözés visszaszorításán dolgoznak.
+          <li>🚓 <strong>Rendőrség (LSPD)</strong> – A város rendjének fenntartásáért felelős hivatalos szervezet, akik a bűnözés visszaszorításán dolgoznak.
+            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés a Rendőrséghez: Discordon keresztül!')">Jelentkezés</button>
           </li>
-          <li>
-            <strong>Mentőszolgálat (EMS)</strong> – Az egészségügyi ellátásért felelős frakció, akik a sérültek és betegek ellátását végzik.
+          <li>🚑 <strong>Mentőszolgálat (EMS)</strong> – Az egészségügyi ellátásért felelős frakció, akik a sérültek és betegek ellátását végzik.
+            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés az EMS-hez: Discordon keresztül!')">Jelentkezés</button>
           </li>
-          <li>
-            <strong>Tűzoltóság (LSFD)</strong> – A tűzesetek, balesetek és katasztrófahelyzetek kezeléséért felelős egység.
+          <li>🚒 <strong>Tűzoltóság (LSFD)</strong> – A tűzesetek, balesetek és katasztrófahelyzetek kezeléséért felelős egység.
+            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés a Tűzoltósághoz: Discordon keresztül!')">Jelentkezés</button>
           </li>
-          <li>
-            <strong>Taxiszolgálat</strong> – A játékosok szállítását végző szolgáltató frakció.
+          <li>🚕 <strong>Taxiszolgálat</strong> – A játékosok szállítását végző szolgáltató frakció.
+            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés a Taxiszolgálathoz: Discordon keresztül!')">Jelentkezés</button>
           </li>
-          <li>
-            <strong>Maffia/Banda</strong> – Szervezett bűnözői csoportok, akik illegális tevékenységekkel foglalkoznak.
+          <li>💀 <strong>Maffia/Banda</strong> – Szervezett bűnözői csoportok, akik illegális tevékenységekkel foglalkoznak.
+            <button class="btn btn-danger" style="margin-left:10px;" onclick="alert('Egyedi jelentkezés szükséges!')">Jelentkezés</button>
           </li>
-          <li>
-            <strong>Autószerelő (Mechanic)</strong> – A járművek javításáért és módosításáért felelős frakció.
+          <li>🔧 <strong>Autószerelő (Mechanic)</strong> – A járművek javításáért és módosításáért felelős frakció.
+            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés az Autószerelőkhöz: Discordon keresztül!')">Jelentkezés</button>
           </li>
         </ul>
       </section>
@@ -61,6 +90,13 @@
     <footer>
       © 2025 White Angel RP. Minden jog fenntartva.
     </footer>
+    <button id="backToTop" title="Vissza a tetejére">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#181824" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5"/>
+        <path d="M6 11l6-6 6 6"/>
+      </svg>
+    </button>
   </div>
+  <script src="../js/main.js"></script>
 </body>
 </html>
