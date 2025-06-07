@@ -64,26 +64,74 @@
 
       <section id="frakciok">
         <h2>Frakciók</h2>
-        <ul>
-          <li>🚓 <strong>Rendőrség (LSPD)</strong> – A város rendjének fenntartásáért felelős hivatalos szervezet, akik a bűnözés visszaszorításán dolgoznak.
-            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés a Rendőrséghez: Discordon keresztül!')">Jelentkezés</button>
-          </li>
-          <li>🚑 <strong>Mentőszolgálat (EMS)</strong> – Az egészségügyi ellátásért felelős frakció, akik a sérültek és betegek ellátását végzik.
-            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés az EMS-hez: Discordon keresztül!')">Jelentkezés</button>
-          </li>
-          <li>🚒 <strong>Tűzoltóság (LSFD)</strong> – A tűzesetek, balesetek és katasztrófahelyzetek kezeléséért felelős egység.
-            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés a Tűzoltósághoz: Discordon keresztül!')">Jelentkezés</button>
-          </li>
-          <li>🚕 <strong>Taxiszolgálat</strong> – A játékosok szállítását végző szolgáltató frakció.
-            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés a Taxiszolgálathoz: Discordon keresztül!')">Jelentkezés</button>
-          </li>
-          <li>💀 <strong>Maffia/Banda</strong> – Szervezett bűnözői csoportok, akik illegális tevékenységekkel foglalkoznak.
-            <button class="btn btn-danger" style="margin-left:10px;" onclick="alert('Egyedi jelentkezés szükséges!')">Jelentkezés</button>
-          </li>
-          <li>🔧 <strong>Autószerelő (Mechanic)</strong> – A járművek javításáért és módosításáért felelős frakció.
-            <button class="btn btn-outline" style="margin-left:10px;" onclick="alert('Jelentkezés az Autószerelőkhöz: Discordon keresztül!')">Jelentkezés</button>
-          </li>
-        </ul>
+        <div class="faction-list">
+          <!-- Legális frakciók -->
+          <details>
+            <summary><span class="faction-icon faction-blue">👮</span> <strong>Los Santos Police Department</strong></summary>
+            <p>A város rendjének fenntartásáért felelős hivatalos szervezet. Feladata a bűnözés visszaszorítása, a közrend védelme és a lakosság biztonságának garantálása.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-red">🏥</span> <strong>Los Santos Medical Center</strong></summary>
+            <p>Az egészségügyi ellátásért felelős frakció. Sérültek, betegek ellátása, mentés, elsősegélynyújtás és egészségügyi események kezelése.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-orange">🔧</span> <strong>Los Santos Customs</strong></summary>
+            <p>Járművek javítása, tuningolása és átalakítása. A szerelők csapata minden autós problémára megoldást talál.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-yellow">🔧</span> <strong>East Customs</strong></summary>
+            <p>Keleti városrész szerelőműhelye, ahol szintén javítás, tuning és egyedi átalakítások várnak.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-purple">☕</span> <strong>UwU Cafe</strong></summary>
+            <p>Különleges hangulatú kávézó, ahol a játékosok találkozhatnak, beszélgethetnek, és különféle eseményeken vehetnek részt.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-green">🔫</span> <strong>Iron Sight</strong></summary>
+            <p>Legális fegyverbolt, ahol engedéllyel rendelkező játékosok vásárolhatnak fegyvereket és kiegészítőket, valamint tanácsot kaphatnak a fegyverhasználatról.</p>
+          </details>
+          <!-- Illegális frakciók -->
+          <details>
+            <summary><span class="faction-icon faction-red">🛡️</span> <strong>Albán Maffia</strong></summary>
+            <p>Szervezett bűnözői csoport, amely illegális tevékenységekkel, fegyver- és drogkereskedelemmel foglalkozik.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-white">🛡️</span> <strong>Orosz Maffia</strong></summary>
+            <p>Az orosz szervezett bűnözés képviselői, akik a város alvilágában játszanak kulcsszerepet.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-red">🛡️</span> <strong>Cartel De Nostre</strong></summary>
+            <p>Dél-amerikai kartell, amely főként drogkereskedelemmel és egyéb illegális ügyletekkel foglalkozik.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-green">🟢</span> <strong>Grove Street</strong></summary>
+            <p>Hírhedt banda, amely a Grove Street környékén uralkodik, főként utcai bűnözéssel foglalkozik.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-purple">🟣</span> <strong>Ballas</strong></summary>
+            <p>Rivális banda a Grove Streettel szemben, saját területekkel és illegális tevékenységekkel.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-yellow">🟡</span> <strong>Vagos</strong></summary>
+            <p>Latin-amerikai banda, amely a város egyes részeit uralja, főként drog- és fegyverkereskedelemmel foglalkozik.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-blue">🔵</span> <strong>Crips</strong></summary>
+            <p>Amerikai eredetű banda, amely a városban is jelen van, főként utcai bűnözéssel és területvédéssel foglalkozik.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-cyan">🔵</span> <strong>Varriors Los Aztecas</strong></summary>
+            <p>Mexikói banda, amely a város déli részén tevékenykedik, főként fegyver- és drogkereskedelemben.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-grey">🏍️</span> <strong>The Lost MC</strong></summary>
+            <p>Motoros banda, amely illegális versenyeket, fegyverkereskedelmet és egyéb bűncselekményeket szervez.</p>
+          </details>
+          <details>
+            <summary><span class="faction-icon faction-red">💣</span> <strong>Sindycate</strong></summary>
+            <p>Egyedi, titkos szervezet, amely különféle illegális tevékenységeket folytat a városban.</p>
+          </details>
+        </div>
       </section>
     </div>
 
