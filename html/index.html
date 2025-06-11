@@ -21,7 +21,8 @@
         <h1>White Angel RP</h1>
         <p>Magyar FiveM RolePlay közösség</p>
         <div class="server-status">
-          <span class="status-dot offline"></span> Szerver állapot: <strong>Offline</strong> | <span id="playerCount">0/5</span>
+          <span class="status-dot" id="serverDot"></span> Szerver állapot: <strong id="serverOnlineText">Betöltés...</strong> | 
+          <span id="PlayersCount">Betöltés...</span>
         </div>
         <a href="" class="btn" style="margin-top:24px;display:inline-block;">Csatlakozás a szerverhez</a>
         <div class="scroll-down-arrow" onclick="document.getElementById('rolunk').scrollIntoView({behavior:'smooth'})">
@@ -146,5 +147,6 @@
     </button>
   </div>
   <script src="../js/main.js"></script>
+  <script src="../js/server-status.js"></script>
 </body>
 </html>

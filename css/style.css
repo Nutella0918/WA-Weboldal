@@ -325,12 +325,31 @@ iframe[src*="discord.com/widget"] {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #43d047;
   margin-right: 6px;
   border: 2px solid #181824;
+  background: #d04343; /* alapból offline */
+  vertical-align: middle;
+  transition: background 0.3s;
 }
-.status-dot.online { background: #43d047; }
-.status-dot.offline { background: #d04343; }
+.status-dot.online {
+  background: #43d047;
+  animation: status-blink 1.2s infinite alternate;
+}
+.status-dot.offline {
+  background: #d04343;
+  animation: none;
+}
+
+@keyframes status-blink {
+  0% { box-shadow: 0 0 0 0 #43d04755; }
+  100% { box-shadow: 0 0 8px 4px #43d04755; }
+}
+
+/* Szerver státusz szöveg színezése */
+#serverOnlineText {
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
 /* Reszponzív dizájn */
 @media (max-width: 900px) {
