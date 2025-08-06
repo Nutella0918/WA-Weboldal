@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>White Angel RP - FiveM</title>
+  <!-- Bootstrap CSS -->
+  <link href="../bootstrap-5.3.7-dist/css/bootstrap.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <div class="wrapper">
     <nav>
-      <a href="#kapcsolat">Kapcsolat</a>
+      <a href="index.html">Főoldal</a>
       <a href="szabaly.html">Szabályzat</a>      
-      <a href="tamogatas.html">Támogatás</a>
+      <a href="tamogatas.html">WA Coin</a>
+      <a href="galeria.html">WARP Galéria</a>
     </nav>
 
     <div class="content">
@@ -37,9 +40,8 @@
           <strong>Küldetésünk</strong>, hogy mindenki számára biztonságos, élvezetes és kreatív játékteret biztosítsunk, ahol a közösség és a jó hangulat az első!
         </p>
       </section>
-
-      <section id="kapcsolat">
-        <h2>Kapcsolat</h2>
+      <section>
+        <h2>Kapcsolatok</h2>
         <p>
           <strong>Discord:</strong>
           <a href="https://discord.gg/FhEZmeqp9T" target="_blank" rel="noopener">discord.gg/FhEZmeqp9T</a>
@@ -48,7 +50,7 @@
           <strong>Email:</strong>
           <a href="">-</a>
         </p>
-        <div class="btn-group" style="justify-content:center;">
+        <div class="btn-group">
           <a href="" class="btn btn-icon" title="Írj emailt">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#181824" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/>
@@ -63,84 +65,93 @@
         </div>
       </section>
 
-      <section id="frakciok">
-        <h2>Frakciók</h2>
-        <div class="faction-list">
-          <!-- Legális frakciók -->
-          <details>
-            <summary><span class="faction-icon faction-blue">👮</span> <strong>Los Santos Police Department</strong></summary>
-            <p>A város rendjének fenntartásáért felelős hivatalos szervezet. Feladata a bűnözés visszaszorítása, a közrend védelme és a lakosság biztonságának garantálása.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-red">🏥</span> <strong>Los Santos Medical Center</strong></summary>
-            <p>Az egészségügyi ellátásért felelős frakció. Sérültek, betegek ellátása, mentés, elsősegélynyújtás és egészségügyi események kezelése.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-orange">🔧</span> <strong>Los Santos Customs</strong></summary>
-            <p>Járművek javítása, tuningolása és átalakítása. A szerelők csapata minden autós problémára megoldást talál.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-yellow">🔧</span> <strong>East Customs</strong></summary>
-            <p>Keleti városrész szerelőműhelye, ahol szintén javítás, tuning és egyedi átalakítások várnak.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-purple">☕</span> <strong>UwU Cafe</strong></summary>
-            <p>Különleges hangulatú kávézó, ahol a játékosok találkozhatnak, beszélgethetnek, és különféle eseményeken vehetnek részt.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-green">🔫</span> <strong>Iron Sight</strong></summary>
-            <p>Legális fegyverbolt, ahol engedéllyel rendelkező játékosok vásárolhatnak fegyvereket és kiegészítőket, valamint tanácsot kaphatnak a fegyverhasználatról.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-grey">⚖️</span> <strong>White-Law Co.</strong></summary>
-            <p>Jogi szolgáltatásokat nyújtó cég, amely segíti a játékosokat jogi ügyeikben, tanácsadással és képviselettel.</p>
-          </details>
-          <!-- Illegális frakciók -->
-          <details>
-            <summary><span class="faction-icon faction-red">🛡️</span> <strong>Albán Maffia</strong></summary>
-            <p>Szervezett bűnözői csoport, amely illegális tevékenységekkel, fegyver- és drogkereskedelemmel foglalkozik.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-white">🛡️</span> <strong>Orosz Maffia</strong></summary>
-            <p>Az orosz szervezett bűnözés képviselői, akik a város alvilágában játszanak kulcsszerepet.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-red">🛡️</span> <strong>Cartel De Nostre</strong></summary>
-            <p>Dél-amerikai kartell, amely főként drogkereskedelemmel és egyéb illegális ügyletekkel foglalkozik.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-blue">🛡️</span> <strong>Camorra</strong></summary>
-            <p>Olasz eredetű bűnszervezet, amely a városban szervezett bűnözéssel, zsarolással és illegális kereskedelemmel foglalkozik.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-green">🟢</span> <strong>Grove Street</strong></summary>
-            <p>Hírhedt banda, amely a Grove Street környékén uralkodik, főként utcai bűnözéssel foglalkozik.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-purple">🟣</span> <strong>Ballas</strong></summary>
-            <p>Rivális banda a Grove Streettel szemben, saját területekkel és illegális tevékenységekkel.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-yellow">🟡</span> <strong>Vagos</strong></summary>
-            <p>Latin-amerikai banda, amely a város egyes részeit uralja, főként drog- és fegyverkereskedelemmel foglalkozik.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-blue">🔵</span> <strong>Crips</strong></summary>
-            <p>Amerikai eredetű banda, amely a városban is jelen van, főként utcai bűnözéssel és területvédéssel foglalkozik.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-cyan">🔵</span> <strong>Varriors Los Aztecas</strong></summary>
-            <p>Mexikói banda, amely a város déli részén tevékenykedik, főként fegyver- és drogkereskedelemben.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-grey">🏍️</span> <strong>The Lost MC</strong></summary>
-            <p>Motoros banda, amely illegális versenyeket, fegyverkereskedelmet és egyéb bűncselekményeket szervez.</p>
-          </details>
-          <details>
-            <summary><span class="faction-icon faction-red">💣</span> <strong>Sindycate</strong></summary>
-            <p>Egyedi, titkos szervezet, amely különféle illegális tevékenységeket folytat a városban.</p>
-          </details>
+      <section>
+        <h2>Social Media</h2>
+        <p>
+          <strong>Instagram:</strong>
+          <a href="https://instagram.com/WARP/" target="_blank" rel="noopener">instagram.com/WARP/</a>
+        </p>
+        <p>
+          <strong>Tiktok:</strong>
+          <a href="https://tiktok.com/@WARP">tiktok.com/@WARP</a>
+        </p>
+        <div class="btn-group">
+          <a href="https://instagram.com/whiteangelrp" target="_blank" class="btn btn-icon" title="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#181824" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17" cy="7" r="1"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com/@whiteangelrp" target="_blank" class="btn btn-icon" title="TikTok">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#181824" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 17a3 3 0 1 0 3-3V7h3a3 3 0 0 0 3-3"/>
+              <path d="M12 7v10"/>
+            </svg>
+          </a>
         </div>
+      </section>
+
+      <section id="warp-managment">
+        <h2>WARP-Managment</h2>
+        <p>
+          A WARP-Managment csapata felelős a szerver irányításáért, fejlesztéséért és a közösség támogatásáért. Célunk, hogy minden játékos számára biztonságos, élvezetes és folyamatosan fejlődő környezetet biztosítsunk.
+        </p>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Dominik.gif" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1">𝑫𝒐𝒎𝒊𝒏𝒊𝒌</h5>
+              <p class="card-text mb-0">Server Owner</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Kutyuli.jpg" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1 text-center">𝓜𝓪𝓻𝓽𝓲𝓷</h5>
+              <div class="text-warning mb-1 text-center" style="font-size:1.15em;">(🐶 𝓚𝓾𝓽𝔂𝓾𝓵𝓲 🐶)</div>
+              <p class="card-text mb-0 text-center">Developer</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Nutella.jpg" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1">Nutella</h5>
+              <p class="card-text mb-0">Operations Manager</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Bencikeh.gif" class="rounded-circle mb-3"  style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1">ベン</h5>
+              <p class="card-text mb-0">Operations Manager</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Karesz.jpg" class="rounded-circle mb-3"  style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1">Karesz</h5>
+              <p class="card-text mb-0">Server Manager</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Gabesz.png" class="rounded-circle mb-3"  style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1">𝒢𝒶𝒷𝑒𝓈𝓏</h5>
+              <p class="card-text mb-0">Server Manager</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-dark text-light h-100 border-warning align-items-center p-3">
+              <img src="../img/management/Sanyi.png" class="rounded-circle mb-3"  style="width:96px;height:96px;object-fit:cover;">
+              <h5 class="card-title text-warning mb-1">sanyika</h5>
+              <p class="card-text mb-0">Head Moderator</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">
+          Ha kérdésed vagy problémád van, fordulj bizalommal a csapathoz Discordon!
+        </p>
       </section>
     </div>
 
@@ -152,6 +163,12 @@
         <path d="M12 19V5"/>
         <path d="M6 11l6-6 6 6"/>
       </svg>
+    </button>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/server-status.js"></script>
+</body>
+</html>
     </button>
   </div>
   <script src="../js/main.js"></script>

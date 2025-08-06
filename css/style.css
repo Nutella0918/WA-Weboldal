@@ -351,6 +351,86 @@ iframe[src*="discord.com/widget"] {
   transition: color 0.3s;
 }
 
+/* Section headings and paragraphs */
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+
+section strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Kapcsolatok & Social Media button group */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.btn-icon {
+  background: #FFD700;
+  color: #181824;
+  border-radius: 50%;
+  width: 54px !important;
+  height: 54px !important;
+  min-width: 54px !important;
+  min-height: 54px !important;
+  max-width: 54px !important;
+  max-height: 54px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.5rem;
+  border: 2px solid #181824;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  aspect-ratio: 1 / 1;
+}
+
+.btn-icon svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Remove any width/height from .btn-group that could stretch children */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ...existing code... */
+
 /* Reszponzív dizájn */
 @media (max-width: 900px) {
   .services {
@@ -365,6 +445,26 @@ iframe[src*="discord.com/widget"] {
   }
   header {
     padding: 60px 10px 40px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-group {
+    gap: 8px;
+  }
+  .btn {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+  .btn-icon {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+  .btn-group a[title="Instagram"] span,
+  .btn-group a[title="TikTok"] span {
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -430,20 +530,21 @@ button, .btn {
   background: #FFD700;
   color: #181824;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  width: 54px !important;
+  height: 54px !important;
+  min-width: 54px !important;
+  min-height: 54px !important;
+  max-width: 54px !important;
+  max-height: 54px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   font-size: 1.5rem;
   border: 2px solid #181824;
-  box-shadow: none;
-}
-.btn-icon:hover {
-  background: #ffe066;
-  color: #181824;
-  border-color: #000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  aspect-ratio: 1 / 1;
 }
 
 /* Gombcsoport */
@@ -480,6 +581,31 @@ button, .btn {
   outline: none;
 }
 .faction-list p {
+  margin: 10px 0 0 0;
+  color: #fffbe6;
+  font-size: 1em;
+}
+  font-size: 1.13em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  outline: none;
+}
+.faction-list p {
+  margin: 10px 0 0 0;
+  color: #fffbe6;
+  font-size: 1em;
+}
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  outline: none;
+}
+.faction-list p {
+  margin: 10px 0 0 0;
+  color: #fffbe6;
+  font-size: 1em;
+}
   margin: 10px 0 0 0;
   color: #fffbe6;
   font-size: 1em;
