@@ -40,3 +40,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Back to top button logic
+document.addEventListener('DOMContentLoaded', function () {
+  const backToTop = document.getElementById('backToTop');
+  if (!backToTop) return;
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 200) {
+      backToTop.style.display = 'flex';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
+  backToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
