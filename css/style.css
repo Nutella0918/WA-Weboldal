@@ -554,3 +554,32 @@ button, .btn {
   gap: 10px;
   margin: 12px 0;
 }
+
+.tiktok {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+}
+
+.diccord {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+  margin-right: 10px;
+}
+
+.instagram {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+}
+
+.email {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+}

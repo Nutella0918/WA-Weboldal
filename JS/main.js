@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Back to top button logic
+// Back to top button logic for every page (window scroll to top)
 document.addEventListener('DOMContentLoaded', function () {
   const backToTop = document.getElementById('backToTop');
   if (!backToTop) return;
@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  backToTop.addEventListener('click', function () {
+  backToTop.addEventListener('click', function (e) {
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
