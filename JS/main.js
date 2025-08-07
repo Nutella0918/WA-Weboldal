@@ -41,21 +41,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Back to top button logic for every page (window scroll to top)
+// Egyszerű, működő back to top logika (duplikáció nélkül)
 document.addEventListener('DOMContentLoaded', function () {
-  const backToTop = document.getElementById('backToTop');
-  if (!backToTop) return;
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
 
-  window.addEventListener('scroll', function () {
+  // Gomb mutatása/elrejtése
+  function toggleBtn() {
     if (window.scrollY > 200) {
-      backToTop.style.display = 'flex';
+      btn.style.display = 'flex';
     } else {
-      backToTop.style.display = 'none';
+      btn.style.display = 'none';
     }
+  }
+  window.addEventListener('scroll', toggleBtn);
+  toggleBtn();
+
+  // Kattintásra az oldal tetejére ugrik
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo(0, 0);
   });
 
-  backToTop.addEventListener('click', function (e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Billentyűzet támogatás
+  btn.tabIndex = 0;
+  btn.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      window.scrollTo(0, 0);
+    }
   });
 });
