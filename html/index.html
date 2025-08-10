@@ -27,7 +27,9 @@
           <span class="status-dot" id="serverDot"></span> Szerver állapot: <strong id="serverOnlineText">Betöltés...</strong> | 
           <span id="PlayersCount">Betöltés...</span>
         </div>
-        <a href="" class="btn" style="margin-top:24px;display:inline-block;">Csatlakozás a szerverhez</a>
+        <button class="btn" style="margin-top:24px;display:inline-block;" onclick="window.location.href='fivem://connect/185.221.21.203'">
+          Csatlakozás a szerverhez
+        </button>
         <div class="scroll-down-arrow" onclick="document.getElementById('rolunk').scrollIntoView({behavior:'smooth'})">
           <span>&#8595;</span>
         </div>
@@ -48,7 +50,7 @@
         </p>
         <p>
           <strong>Email:</strong>
-          <a href="">-</a>
+          <a href="whiteangelroleplay@outlook.hu">whiteangelroleplay@outlook.hu</a>
         </p>
         <div class="btn-group">
           <a href="" class="btn btn-icon" title="Írj emailt">
@@ -151,6 +153,18 @@
     </button>
     <script src="../js/main.js"></script>
     <script src="../js/server-status.js"></script>
+    <script>
+      // FiveM szerverhez csatlakozás gomb
+      document.addEventListener('DOMContentLoaded', function() {
+        var connectBtn = document.getElementById('connectBtn');
+        if (connectBtn) {
+          connectBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'fivem://connect/185.221.21.203';
+          });
+        }
+      });
+    </script>
   </div>
 </body>
 </html>
