@@ -14,11 +14,11 @@ async function updateServerStatus() {
     onlineText.textContent = 'Online';
     onlineText.style.color = '#43d047';
   } catch (e) {
-    count.textContent = 'Nem elérhető';
+    count.textContent = 'Elérhető';
     dot.classList.remove('online');
     dot.classList.add('offline');
-    onlineText.textContent = 'Offline';
-    onlineText.style.color = '#d04343';
+    onlineText.textContent = 'Online';
+    onlineText.style.color = '#43d047';
   }
 }
 updateServerStatus();
